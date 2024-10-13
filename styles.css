@@ -1,12 +1,10 @@
-@import "compass/css3";
-
-*{
+* {
   box-sizing: border-box;
 }
 
 html,
-body{
-  background-color: #FEDCC8;
+body {
+  background-color: #fedcc8;
 }
 
 .parallax {
@@ -22,22 +20,21 @@ body{
   margin-left: -1500px;
 }
 
-.parallax__layer{
+.parallax__layer {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  
-  img{
-    display: block;
-    position: absolute;
-    bottom: 0;
-  }
+}
+.parallax__layer img {
+  display: block;
+  position: absolute;
+  bottom: 0;
 }
 
-.parallax__cover{
-  background: #2D112B;
+.parallax__cover {
+  background: #2d112b;
   display: block;
   position: absolute;
   top: 100%;
@@ -47,11 +44,30 @@ body{
   z-index: 2;
 }
 
-$parallax__layers: 6;
+.parallax__layer__0 {
+  transform: translateZ(-300px) scale(4);
+}
 
-@for $i from 0 through $parallax__layers {
-  $x: ($parallax__layers - $i) / 2;
-  .parallax__layer__#{$i}{
-     transform: translateZ(-100 * $x#{px}) scale($x + 1);
-  }
+.parallax__layer__1 {
+  transform: translateZ(-250px) scale(3.5);
+}
+
+.parallax__layer__2 {
+  transform: translateZ(-200px) scale(3);
+}
+
+.parallax__layer__3 {
+  transform: translateZ(-150px) scale(2.5);
+}
+
+.parallax__layer__4 {
+  transform: translateZ(-100px) scale(2);
+}
+
+.parallax__layer__5 {
+  transform: translateZ(-50px) scale(1.5);
+}
+
+.parallax__layer__6 {
+  transform: translateZ(0px) scale(1);
 }
