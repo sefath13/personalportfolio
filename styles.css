@@ -37,7 +37,7 @@ body {
 }
 
 .parallax__cover {
-  background: linear-gradient(180deg, rgba(6,6,57,1) 68%, rgba(19,5,133,1) 100%);
+  background: #2D112B;
   display: block;
   position: absolute;
   top: 100%;
